@@ -6,10 +6,10 @@
 
 ## Features
 
-- Extracts GPS coordinates from a variety of sources, including GPS-enabled cameras, GPS log files, or external GPS devices.
-- Tags the GPS location information onto photos in popular formats like JPEG and PNG.
+- Extracts GPS coordinates from Google timeline json files.
+- Tags the GPS location information onto photos in format of JPEG.
 - Supports batch processing, allowing you to tag multiple photos simultaneously.
-- Offers customization options for the output file names and formatting of the GPS coordinates.
+- Offers customization options for input image file and timeline json file timezone and duration expansion for better matching ratio.
 - Provides detailed error handling and informative messages to ensure smooth execution.
 
 ## Installation
@@ -42,10 +42,8 @@ Configuration
 You can customize the behavior of the Photo GPS Location Tagger program by modifying the config.ini file. Here are some important configuration options:
 
 photo_directory: Path to the directory containing the photos to be tagged.
-gps_data_file: Path to the GPS data source file (e.g., GPS log file).
-output_directory: Path to the directory where the tagged photos will be saved.
-output_file_format: Format of the output file names (e.g., {original_name}_tagged).
-gps_coordinate_format: Format of the GPS coordinates to be displayed on the photo (e.g., Decimal Degrees).
+gps_data_file: Path to the GPS data source file (e.g., Goole timeline json file).
+
 Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please submit an issue or a pull request to this repository.
