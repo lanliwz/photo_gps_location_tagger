@@ -42,7 +42,7 @@ Configuration
 You can customize the behavior of the Photo GPS Location Tagger program by modifying the config.ini file. Here are some important configuration options:
 
 photo_directory: Path to the directory containing the photos to be tagged.
-gps_data_file: Path to the GPS data source file (e.g., Goole timeline json file).
+gps_data_file: Path to the GPS data source file (e.g., Google timeline json file).
 
 Contributing
 
