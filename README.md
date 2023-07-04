@@ -55,7 +55,8 @@ This project makes use of the following open-source libraries:
 
 Pillow - Python Imaging Library (PIL)
 pyexiv2 - Python binding to the Exiv2 image metadata library
-Contact
+
+### Contact
 
 For any inquiries or feedback, please contact lanliwz@yahoo.com.
 
