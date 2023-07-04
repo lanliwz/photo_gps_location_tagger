@@ -1,36 +1,41 @@
 # Photo GPS Location Tagger
 
-Photo GPS Location Tagger is a Python program that allows you to tag the GPS location information onto photos. With this program, you can easily add GPS coordinates to your photos, enabling you to organize and categorize them based on their capture location.
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
-### Features
+**Photo GPS Location Tagger** is a Python program that allows you to tag the GPS location information onto photos. With this program, you can easily add GPS coordinates to your photos, enabling you to organize and categorize them based on their capture location.
 
-Extracts GPS coordinates from a variety of sources, including GPS-enabled cameras, GPS log files, or external GPS devices.
-Tags the GPS location information onto photos in popular formats like JPEG and PNG.
-Supports batch processing, allowing you to tag multiple photos simultaneously.
-Offers customization options for the output file names and formatting of the GPS coordinates.
-Provides detailed error handling and informative messages to ensure smooth execution.
-### Installation
+## Features
 
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/your-username/photo-gps-location-tagger.git
-Navigate to the project directory:
-bash
-Copy code
-cd photo-gps-location-tagger
-Install the required dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Usage
+- Extracts GPS coordinates from a variety of sources, including GPS-enabled cameras, GPS log files, or external GPS devices.
+- Tags the GPS location information onto photos in popular formats like JPEG and PNG.
+- Supports batch processing, allowing you to tag multiple photos simultaneously.
+- Offers customization options for the output file names and formatting of the GPS coordinates.
+- Provides detailed error handling and informative messages to ensure smooth execution.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/photo-gps-location-tagger.git
+
+
+2. Navigate to the project directory:
+    ```bash
+    cd photo-gps-location-tagger
+3. install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+
+## Usage
 
 Ensure that the photos you want to tag and the GPS data source (e.g., GPS log file) are accessible.
 Modify the configuration file (config.ini) with the desired settings, including the paths to the input photos and GPS data, output directory, and customization options.
 Run the program:
-bash
-Copy code
-python photo_gps_location_tagger.py
+   ```bash
+   python photo_gps_location_tagger.py
+   ```
+
 The program will process the input photos and tag them with the GPS location information according to the configuration settings.
 Configuration
 
@@ -45,18 +50,18 @@ Contributing
 
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please submit an issue or a pull request to this repository.
 
-### License
+## License
 
 This project is licensed under the MIT License.
 
-### Acknowledgements
+## Acknowledgements
 
 This project makes use of the following open-source libraries:
 
 Pillow - Python Imaging Library (PIL)
 pyexiv2 - Python binding to the Exiv2 image metadata library
 
-### Contact
+## Contact
 
 For any inquiries or feedback, please contact lanliwz@yahoo.com.
 
