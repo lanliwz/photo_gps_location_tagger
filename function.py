@@ -1,9 +1,44 @@
 import os
-from datetime import datetime
-
 from PIL import Image, ExifTags
 import piexif
 import json
+import pytz
+from datetime import datetime
+
+
+def add_timezone(dt, timezone):
+    # Get the timezone object based on the timezone string
+    tz = pytz.timezone(timezone)
+
+    # Localize the datetime object with the specified timezone
+    localized_dt = tz.localize(dt)
+
+    return localized_dt
+
+# Convert GPX time string to datetime object
+def timeline_to_datetime(gpx_time_string):
+    mytime:datetime = None
+    try:
+        mytime = datetime.strptime(gpx_time_string, "%Y-%m-%dT%H:%M:%S.%fZ")
+    except:
+        mytime = datetime.strptime(gpx_time_string, "%Y-%m-%dT%H:%M:%SZ")
+    return mytime
+
+def convert_timezone(dt: datetime, from_tz, to_tz):
+    # Set the source timezone
+    source_tz = pytz.timezone(from_tz)
+
+    # Set the destination timezone
+    dest_tz = pytz.timezone(to_tz)
+
+    # Convert the datetime to the source timezone
+    localized_dt = source_tz.localize(dt)
+
+    # Convert the datetime to the destination timezone
+    converted_dt = localized_dt.astimezone(dest_tz)
+
+    return converted_dt
+
 
 def is_between(check_dt,start_dt, end_dt):
     return start_dt <= check_dt <= end_dt
