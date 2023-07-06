@@ -39,7 +39,7 @@ Run the program:
 
 You can customize the behavior of the Photo GPS Location Tagger program by optional parameters:
    ```
-   python photo_gps_location_tagger.py /images /google/timeline/2023-05-01.json
+   python photo_gps_location_tagger.py /images /google/timeline/2023-05-01.json --jpeg_timezone Europe/Lisbon --timeline_timezone Europe/Lisbon --timeline_adjust_minute 30
    ```
    
 
