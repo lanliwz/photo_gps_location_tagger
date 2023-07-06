@@ -27,3 +27,39 @@
    ```bash
    pip install -r requirements.txt
 
+## Usage
+
+Ensure that the photos you want to tag and the GPS data source (e.g., GPS log file) are accessible.
+Run the program:
+   ```commandline
+   python photo_gps_location_tagger.py /images /google/timeline/2023-05-01.json
+   ```
+
+
+
+You can customize the behavior of the Photo GPS Location Tagger program by optional parameters:
+   ```
+   python photo_gps_location_tagger.py /images /google/timeline/2023-05-01.json
+   ```
+   
+
+Contributing
+
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please submit an issue or a pull request to this repository.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgements
+
+This project makes use of the following open-source libraries:
+
+Pillow - Python Imaging Library (PIL)
+pyexiv2 - Python binding to the Exiv2 image metadata library
+
+## Contact
+
+For any inquiries or feedback, please contact lanliwz@yahoo.com.
+
+Enjoy tagging your photos with GPS location information!
