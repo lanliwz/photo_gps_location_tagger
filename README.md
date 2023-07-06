@@ -17,7 +17,7 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/photo-gps-location-tagger.git
+   git clone https://github.com/lanliwz/photo-gps-location-tagger.git
 
 
 2. Navigate to the project directory:
