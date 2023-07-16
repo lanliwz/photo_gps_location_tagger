@@ -19,7 +19,7 @@ def photo_gps_location_tagger(jpeg_folder,timeline_json_file,jpeg_timezone = Non
     numoffiles = len(picfiles)
     notaggingfiles = 0
 
-    print(f'Total {numoffiles} image files found')
+    print(f'Total {numoffiles-1} image files found')
 
     jpeg_datetime_adjust_minutes: int = 0
 
@@ -55,7 +55,7 @@ def photo_gps_location_tagger(jpeg_folder,timeline_json_file,jpeg_timezone = Non
         if match == False:
             notaggingfiles = notaggingfiles +1
             print(f'image timestamp: {picdatetime}, no GPS tagging for image file {picfile}')
-    print(f"end tagging, total {numoffiles - notaggingfiles} of {numoffiles} tagged")
+    print(f"end tagging, total {numoffiles - notaggingfiles-1} of {numoffiles-1} tagged")
 
 
 if __name__ == "__main__":
