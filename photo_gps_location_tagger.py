@@ -68,12 +68,13 @@ if __name__ == "__main__":
     parser.add_argument("-j", "--jpeg_timezone", type=str, help="Optional parameter for image timestamp timezone, default 'Europe/Lisbon'")
     parser.add_argument("-t", "--timeline_timezone", type=str, help="Optional parameter for google file timezone, default 'Europe/Lisbon'")
     parser.add_argument("-a", "--timeline_adjust_minute", type=int, help="Optional parameter for google duration, larger number means better chance for tagging, but less precision")
-    # Parse the command-line arguments
+
+    parser.add_argument("-s", "--timeline_segment", type=str, help="Optional parameter for google segment, default is placeVisit, you can choose activitySegment")
     args = parser.parse_args()
 
     # Call the main function with the provided input parameters
     print(type(args.timeline_adjust_minute))
-    photo_gps_location_tagger(args.image_file_folder,args.timeline_json_file,args.jpeg_timezone, args.timeline_timezone,args.timeline_adjust_minute )
+    photo_gps_location_tagger(args.image_file_folder,args.timeline_json_file,args.jpeg_timezone, args.timeline_timezone,args.timeline_adjust_minute,args.timeline_segment )
 
 
 
